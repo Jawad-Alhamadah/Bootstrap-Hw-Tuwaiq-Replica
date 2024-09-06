@@ -1,428 +1,648 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
 
-    <title>tuwaiq copy</title>
-  </head>
-  <body dir="rtl">
-   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top white-on-hover">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      
-      <img class="logo" src="logo_navbar.svg" alt="" width="50%" >
-    </a>
-    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon color-white"></span>
-    </button>
-    <div class="collapse navbar-collapse " id="navbarNav">
-      <ul class="navbar-nav ">
-      
-        <li class="nav-item  hover-bg-grey"  aria-current="page">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
 
-          <a class="nav-link active" href="#">
-            <svg class="d-lg-none" xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
-          </svg>الرئيسية  </a>
-          
-        </li>
-        <li class="nav-item  hover-bg-grey "  aria-current="page">
-          <a class="nav-link" href="#">
-            <svg class="d-lg-none" xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
-            <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145"/>
-          </svg>المعسكرات والبرامج</a>
-        </li>
-        <li class="nav-item  hover-bg-grey"  aria-current="page">
-          <a class="nav-link ">
-            <svg  class="d-lg-none" xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" class="bi bi-info-square" viewBox="0 0 16 16">
-            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-          </svg>حول الأكاديمية</a>
-        </li>
-        <li class="nav-item  hover-bg-grey"  aria-current="page">
-          <a class="nav-link "  aria-current="page">
-            <svg class="d-lg-none" xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
-            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
-            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
-          </svg>الأكاديميات التابعة</a>
-        </li>
-        <li class="nav-item hover-bg-grey">
-          <a class="nav-link "  aria-current="page">
-            <svg class="d-lg-none" xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
-            <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
-            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
-          </svg>مركز الاختبارات</a>
-        </li>
-        <hr class="menu-divider">
-        <li class="nav-item mb-2 hover-bg-grey">
-          <a class="nav-link "  aria-current="page">
-            <svg class="d-lg-none" xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
-            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
-          </svg>تسجيل الدخول</a>
-        </li>
-      </ul>
+  <title>tuwaiq copy</title>
+</head>
+
+<body dir="rtl">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top white-on-hover">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+
+        <img class="logo" src="logo_navbar.svg" alt="" width="50%">
+      </a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon color-white"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ">
+
+          <li class="nav-item  hover-bg-grey" aria-current="page">
+
+            <a class="nav-link active" href="#">
+              <svg class="d-lg-none" xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor"
+                class="bi bi-house" viewBox="0 0 16 16">
+                <path
+                  d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+              </svg>الرئيسية </a>
+
+          </li>
+          <li class="nav-item  hover-bg-grey " aria-current="page">
+            <a class="nav-link" href="#">
+              <svg class="d-lg-none" xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor"
+                class="bi bi-display" viewBox="0 0 16 16">
+                <path
+                  d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145" />
+              </svg>المعسكرات والبرامج</a>
+          </li>
+          <li class="nav-item  hover-bg-grey" aria-current="page">
+            <a class="nav-link ">
+              <svg class="d-lg-none" xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor"
+                class="bi bi-info-square" viewBox="0 0 16 16">
+                <path
+                  d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                <path
+                  d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+              </svg>حول الأكاديمية</a>
+          </li>
+          <li class="nav-item  hover-bg-grey" aria-current="page">
+            <a class="nav-link " aria-current="page">
+              <svg class="d-lg-none" xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor"
+                class="bi bi-mortarboard" viewBox="0 0 16 16">
+                <path
+                  d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z" />
+                <path
+                  d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
+              </svg>الأكاديميات التابعة</a>
+          </li>
+          <li class="nav-item hover-bg-grey">
+            <a class="nav-link " aria-current="page">
+              <svg class="d-lg-none" xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor"
+                class="bi bi-award" viewBox="0 0 16 16">
+                <path
+                  d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z" />
+                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
+              </svg>مركز الاختبارات</a>
+          </li>
+          <hr class="menu-divider">
+          <li class="nav-item mb-2 hover-bg-grey">
+            <a class="nav-link " aria-current="page">
+              <svg class="d-lg-none" xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor"
+                class="bi bi-person-plus" viewBox="0 0 16 16">
+                <path
+                  d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                <path fill-rule="evenodd"
+                  d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5" />
+              </svg>تسجيل الدخول</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
-<div class="video-container  row g-0 d-flex align-items-center text-center justify-content-center flex-column">
-  
-  <img class="bg-video " src="bg1.gif" alt="">
-  <h1  class="mb-5 align-top text-white main-title col-sm-7 col-md-8 col-lg-7">تعلم تقنيات
-    المستقبــــــل</h1>
+  <div class="video-container  row g-0 d-flex align-items-center text-center justify-content-center flex-column">
+
+    <img class="bg-video " src="bg1.gif" alt="">
+    <h1 class="mb-5 align-top text-white main-title col-sm-7 col-md-8 col-lg-7">تعلم تقنيات
+      المستقبــــــل</h1>
     <button class="btn mt-2 col-sm-7 col-md-6 col-lg-4 text-white begin-button pb-3">ابـــــــــدأ الآن</button>
 
-</div>
+  </div>
 
-<div class="row g-0 bootcamps-container justify-content-center">
-  <h1 class="col-12 text-center bootcamp-title mb-5 mt-5">
-    المعسكرات والبرامج
-  </h1>
+  <div class="row g-0 bg-grey justify-content-center">
+    <h1 class="col-12 text-center bootcamp-title mb-5 mt-5">
+      المعسكرات والبرامج
+    </h1>
 
 
-  <div class="row justify-content-center gap-3">
-    <div class="card text-right border-0 card-bootcamp shadow-sm " style="width: 28rem; height: 18rem;">
-      <div class="card-body gy-4 row ">
-        <div >
-          <h6 class="card-title card-bootcamp-subtitle">معسكر</h6>
-          <h6 class="card-title card-bootcamp-title" >هندسة عكسية</h6>
-        </div>
-        <div>
-          <div class="d-flex gap-3">
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-pin-map" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
-              <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
-            </svg>الرياض</p>
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-clock" viewBox="0 0 16 16">
-              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
-              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
-            </svg>شهرين</p>
-         
-            
+    <div class="row g-0 justify-content-center gap-3">
+      <div class="card text-right border-0 card-bootcamp shadow-sm " style="width: 28rem; height: 18rem;">
+        <div class="card-body gy-4 row ">
+          <div>
+            <h6 class="card-title card-bootcamp-subtitle">معسكر</h6>
+            <h6 class="card-title card-bootcamp-title">هندسة عكسية</h6>
+          </div>
+          <div>
+            <div class="d-flex gap-3">
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-pin-map" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z" />
+                  <path fill-rule="evenodd"
+                    d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                </svg>الرياض</p>
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-clock" viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                </svg>شهرين</p>
+
+
+            </div>
+
+            <div class="d-flex gap-3">
+
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-calendar3" viewBox="0 0 16 16">
+                  <path
+                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+                  <path
+                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                </svg>البداية: 1/5/2024 </p>
+              <button class="me-auto card-bootcamp-btn rounded-pill col-sm-5">التفاصيل</button>
+
+
+            </div>
+
           </div>
 
-          <div class="d-flex gap-3">
-
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-calendar3" viewBox="0 0 16 16">
-              <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
-              <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-            </svg>البداية: 1/5/2024  </p>
-            <button class="me-auto card-bootcamp-btn rounded-pill col-sm-5">التفاصيل</button>
-            
-            
-          </div>
-          
-        </div>
-  
-        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
       </div>
+
+      <div class="card text-right border-0 card-talk shadow-sm " style="width: 28rem; height: 18rem;">
+        <div class="card-body gy-4 row ">
+          <div>
+            <h6 class="card-title card-bootcamp-subtitle">لقاء</h6>
+            <h6 class="card-title card-bootcamp-title">طرق الوقايه من الهجمات الألكترونية</h6>
+          </div>
+          <div>
+            <div class="d-flex gap-3">
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-pin-map" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z" />
+                  <path fill-rule="evenodd"
+                    d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                </svg>الرياض</p>
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-clock" viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                </svg>ساعة</p>
+
+
+            </div>
+
+            <div class="d-flex gap-3">
+
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-calendar3" viewBox="0 0 16 16">
+                  <path
+                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+                  <path
+                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                </svg>البداية: 1/5/2024 </p>
+              <button class="me-auto card-bootcamp-btn rounded-pill col-sm-5">التفاصيل</button>
+
+
+            </div>
+
+          </div>
+
+          <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+
+      <div class="card text-right border-0 card-bootcamp shadow-sm " style="width: 28rem; height: 18rem;">
+        <div class="card-body gy-4 row ">
+          <div>
+            <h6 class="card-title card-bootcamp-subtitle">معسكر</h6>
+            <h6 class="card-title card-bootcamp-title">معسكر تطوير الالعاب </h6>
+          </div>
+          <div>
+            <div class="d-flex gap-3">
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-pin-map" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z" />
+                  <path fill-rule="evenodd"
+                    d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                </svg>الرياض</p>
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-clock" viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                </svg>ثلاثة اشهر</p>
+
+
+            </div>
+
+            <div class="d-flex gap-3">
+
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-calendar3" viewBox="0 0 16 16">
+                  <path
+                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+                  <path
+                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                </svg>البداية: 4/11/2024 </p>
+              <button class="me-auto card-bootcamp-btn rounded-pill col-sm-5">التفاصيل</button>
+
+
+            </div>
+
+          </div>
+
+          <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+
+      <div class="card text-right border-0 card-course shadow-sm " style="width: 28rem; height: 18rem;">
+        <div class="card-body gy-4 row ">
+          <div>
+            <h6 class="card-title card-bootcamp-subtitle">برنامج</h6>
+            <h6 class="card-title card-bootcamp-title">برنامج أساسيات لحام الدوائر الإلكترونية</h6>
+          </div>
+          <div>
+            <div class="d-flex gap-3">
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-pin-map" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z" />
+                  <path fill-rule="evenodd"
+                    d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                </svg>الرياض</p>
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-clock" viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                </svg>شهرين</p>
+
+
+            </div>
+
+            <div class="d-flex gap-3">
+
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-calendar3" viewBox="0 0 16 16">
+                  <path
+                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+                  <path
+                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                </svg>البداية: 1/5/2024 </p>
+              <button class="me-auto card-bootcamp-btn rounded-pill col-sm-5">التفاصيل</button>
+
+
+            </div>
+
+          </div>
+
+          <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+
+      <div class="card text-right border-0 card-course shadow-sm " style="width: 28rem; height: 18rem;">
+        <div class="card-body gy-4 row ">
+          <div>
+            <h6 class="card-title card-bootcamp-subtitle">برنامج </h6>
+            <h6 class="card-title card-bootcamp-title">برنامج اساسيات AWS</h6>
+          </div>
+          <div>
+            <div class="d-flex gap-3">
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-pin-map" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z" />
+                  <path fill-rule="evenodd"
+                    d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                </svg>الرياض</p>
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-clock" viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                </svg>اسبوع</p>
+
+
+            </div>
+
+            <div class="d-flex gap-3">
+
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-calendar3" viewBox="0 0 16 16">
+                  <path
+                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+                  <path
+                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                </svg>البداية: 9/2/2024 </p>
+              <button class="me-auto card-bootcamp-btn rounded-pill col-sm-5">التفاصيل</button>
+
+
+            </div>
+
+          </div>
+
+          <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+
+      <div class="card text-right border-0 card-bootcamp shadow-sm " style="width: 28rem; height: 18rem;">
+        <div class="card-body gy-4 row ">
+          <div>
+            <h6 class="card-title card-bootcamp-subtitle">معسكر</h6>
+            <h6 class="card-title card-bootcamp-title">معسكر الامن السبراني</h6>
+          </div>
+          <div>
+            <div class="d-flex gap-3">
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-pin-map" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z" />
+                  <path fill-rule="evenodd"
+                    d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                </svg>الرياض</p>
+              <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-clock" viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                </svg>9 اشهر</p>
+
+
+            </div>
+
+            <div class="d-flex gap-3">
+
+              <p class="ml-2 "> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc"
+                  class="bi bi-calendar3" viewBox="0 0 16 16">
+                  <path
+                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+                  <path
+                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                </svg>البداية: 1/5/2024 </p>
+              <button class="me-auto card-bootcamp-btn rounded-pill col-sm-5">التفاصيل</button>
+
+
+            </div>
+
+          </div>
+
+          <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+
+
     </div>
 
-    <div class="card text-right border-0 card-talk shadow-sm " style="width: 28rem; height: 18rem;">
-      <div class="card-body gy-4 row ">
-        <div >
-          <h6 class="card-title card-bootcamp-subtitle">لقاء</h6>
-          <h6 class="card-title card-bootcamp-title" >طرق الوقايه من الهجمات الألكترونية</h6>
-        </div>
-        <div>
-          <div class="d-flex gap-3">
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-pin-map" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
-              <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
-            </svg>الرياض</p>
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-clock" viewBox="0 0 16 16">
-              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
-              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
-            </svg>ساعة</p>
-         
-            
-          </div>
 
-          <div class="d-flex gap-3">
 
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-calendar3" viewBox="0 0 16 16">
-              <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
-              <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-            </svg>البداية: 1/5/2024  </p>
-            <button class="me-auto card-bootcamp-btn rounded-pill col-sm-5">التفاصيل</button>
-            
-            
-          </div>
-          
-        </div>
-  
-        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a> -->
-      </div>
+    <div class="row g-0 justify-content-center">
+      <button class="btn bootcamp-button col-sm-6 mt-4 rounded-pill mb-4">المزيد من المعسكرات والبرامج</button>
+
     </div>
+  </div>
 
-    <div class="card text-right border-0 card-bootcamp shadow-sm " style="width: 28rem; height: 18rem;">
-      <div class="card-body gy-4 row ">
-        <div >
-          <h6 class="card-title card-bootcamp-subtitle">معسكر</h6>
-          <h6 class="card-title card-bootcamp-title" >معسكر تطوير الالعاب </h6>
-        </div>
-        <div>
-          <div class="d-flex gap-3">
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-pin-map" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
-              <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
-            </svg>الرياض</p>
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-clock" viewBox="0 0 16 16">
-              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
-              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
-            </svg>ثلاثة اشهر</p>
-         
-            
+  <div class="row g-0 justify-content-center ">
+    <h1 class="numbers-title text-center mt-5 mb-5">أرقام الأكاديمية</h1>
+
+    <div class="row g-0 justify-content-center gap-5 mb-5 gy-3">
+      <div class="col-sm-11 col-md-4 col-lg-3 ">
+        <div class="card text-center numbers-card shadow-top">
+          <div class="card-body">
+            <a href="#" class="btn btn-primary rounded-circle ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="white" class="bi bi-rocket"
+                viewBox="0 0 16 16">
+                <path d="M8 8c.828 0 1.5-.895 1.5-2S8.828 4 8 4s-1.5.895-1.5 2S7.172 8 8 8" />
+                <path
+                  d="M11.953 8.81c-.195-3.388-.968-5.507-1.777-6.819C9.707 1.233 9.23.751 8.857.454a3.5 3.5 0 0 0-.463-.315A2 2 0 0 0 8.25.064.55.55 0 0 0 8 0a.55.55 0 0 0-.266.073 2 2 0 0 0-.142.08 4 4 0 0 0-.459.33c-.37.308-.844.803-1.31 1.57-.805 1.322-1.577 3.433-1.774 6.756l-1.497 1.826-.004.005A2.5 2.5 0 0 0 2 12.202V15.5a.5.5 0 0 0 .9.3l1.125-1.5c.166-.222.42-.4.752-.57.214-.108.414-.192.625-.281l.198-.084c.7.428 1.55.635 2.4.635s1.7-.207 2.4-.635q.1.044.196.083c.213.09.413.174.627.282.332.17.586.348.752.57l1.125 1.5a.5.5 0 0 0 .9-.3v-3.298a2.5 2.5 0 0 0-.548-1.562zM12 10.445v.055c0 .866-.284 1.585-.75 2.14.146.064.292.13.425.199.39.197.8.46 1.1.86L13 14v-1.798a1.5 1.5 0 0 0-.327-.935zM4.75 12.64C4.284 12.085 4 11.366 4 10.5v-.054l-.673.82a1.5 1.5 0 0 0-.327.936V14l.225-.3c.3-.4.71-.664 1.1-.861.133-.068.279-.135.425-.199M8.009 1.073q.096.06.226.163c.284.226.683.621 1.09 1.28C10.137 3.836 11 6.237 11 10.5c0 .858-.374 1.48-.943 1.893C9.517 12.786 8.781 13 8 13s-1.517-.214-2.057-.607C5.373 11.979 5 11.358 5 10.5c0-4.182.86-6.586 1.677-7.928.409-.67.81-1.082 1.096-1.32q.136-.113.236-.18Z" />
+                <path d="M9.479 14.361c-.48.093-.98.139-1.479.139s-.999-.046-1.479-.139L7.6 15.8a.5.5 0 0 0 .8 0z" />
+              </svg>
+            </a>
+            <h5 class="card-title">عدد المعسكرات والبرامج</h5>
+            <p class="card-text">+700</p>
+            <p class="card-subtext">معسكر وبرنامج</p>
           </div>
-
-          <div class="d-flex gap-3">
-
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-calendar3" viewBox="0 0 16 16">
-              <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
-              <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-            </svg>البداية: 4/11/2024  </p>
-            <button class="me-auto card-bootcamp-btn rounded-pill col-sm-5">التفاصيل</button>
-            
-            
-          </div>
-          
         </div>
-  
-        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a> -->
       </div>
-    </div>
 
-    <div class="card text-right border-0 card-course shadow-sm " style="width: 28rem; height: 18rem;">
-      <div class="card-body gy-4 row ">
-        <div >
-          <h6 class="card-title card-bootcamp-subtitle">برنامج</h6>
-          <h6 class="card-title card-bootcamp-title" >برنامج أساسيات لحام الدوائر الإلكترونية</h6>
-        </div>
-        <div>
-          <div class="d-flex gap-3">
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-pin-map" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
-              <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
-            </svg>الرياض</p>
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-clock" viewBox="0 0 16 16">
-              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
-              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
-            </svg>شهرين</p>
-         
-            
+      <div class="col-sm-11 col-md-4 col-lg-3 ">
+        <div class="card text-center numbers-card shadow-top">
+          <div class="card-body">
+            <a href="#" class="btn btn-primary rounded-circle ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor"
+                class="bi bi-person-vcard" viewBox="0 0 16 16">
+                <path
+                  d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5" />
+                <path
+                  d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z" />
+              </svg>
+            </a>
+            <h5 class="card-title">منــصــة ســـطــر</h5>
+            <p class="card-text">+1000000</p>
+            <p class="card-subtext">متدرب</p>
           </div>
-
-          <div class="d-flex gap-3">
-
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-calendar3" viewBox="0 0 16 16">
-              <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
-              <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-            </svg>البداية: 1/5/2024  </p>
-            <button class="me-auto card-bootcamp-btn rounded-pill col-sm-5">التفاصيل</button>
-            
-            
-          </div>
-          
         </div>
-  
-        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a> -->
       </div>
-    </div>
 
-    <div class="card text-right border-0 card-course shadow-sm " style="width: 28rem; height: 18rem;">
-      <div class="card-body gy-4 row ">
-        <div >
-          <h6 class="card-title card-bootcamp-subtitle">برنامج </h6>
-          <h6 class="card-title card-bootcamp-title" >برنامج اساسيات AWS</h6>
-        </div>
-        <div>
-          <div class="d-flex gap-3">
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-pin-map" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
-              <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
-            </svg>الرياض</p>
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-clock" viewBox="0 0 16 16">
-              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
-              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
-            </svg>اسبوع</p>
-         
-            
+      <div class="col-sm-11 col-md-4 col-lg-3 ">
+        <div class="card text-center numbers-card shadow-top">
+          <div class="card-body">
+            <a href="#" class="btn btn-primary rounded-circle ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor" class="bi bi-person"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+              </svg>
+
+            </a>
+            <h5 class="card-title">عدد المسجلين في البرامج</h5>
+            <p class="card-text">+1000000</p>
+            <p class="card-subtext">مسجل</p>
           </div>
-
-          <div class="d-flex gap-3">
-
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-calendar3" viewBox="0 0 16 16">
-              <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
-              <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-            </svg>البداية: 9/2/2024  </p>
-            <button class="me-auto card-bootcamp-btn rounded-pill col-sm-5">التفاصيل</button>
-            
-            
-          </div>
-          
         </div>
-  
-        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a> -->
       </div>
-    </div>
 
-    <div class="card text-right border-0 card-bootcamp shadow-sm " style="width: 28rem; height: 18rem;">
-      <div class="card-body gy-4 row ">
-        <div >
-          <h6 class="card-title card-bootcamp-subtitle">معسكر</h6>
-          <h6 class="card-title card-bootcamp-title" >معسكر الامن السبراني</h6>
-        </div>
-        <div>
-          <div class="d-flex gap-3">
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-pin-map" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
-              <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
-            </svg>الرياض</p>
-            <p class="ml-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-clock" viewBox="0 0 16 16">
-              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
-              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
-            </svg>9 اشهر</p>
-         
-            
+      <div class="col-sm-11 col-md-4 col-lg-3 ">
+        <div class="card text-center numbers-card shadow-top">
+          <div class="card-body">
+            <a href="#" class="btn btn-primary rounded-circle ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor" class="bi bi-person"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+              </svg>
+            </a>
+            <h5 class="card-title">عــدد الخريجين</h5>
+            <p class="card-text">+15000</p>
+            <p class="card-subtext">متدرب حضوري</p>
           </div>
-
-          <div class="d-flex gap-3">
-
-            <p class="ml-2 "> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9caccc" class="bi bi-calendar3" viewBox="0 0 16 16">
-              <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
-              <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-            </svg>البداية: 1/5/2024  </p>
-            <button class="me-auto card-bootcamp-btn rounded-pill col-sm-5">التفاصيل</button>
-            
-            
-          </div>
-          
         </div>
-  
-        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a> -->
       </div>
-    </div>
 
+
+
+    </div>
+  </div>
+
+  <div class="row  g-0 justify-content-center">
+    <button class="btn bootcamp-button col-sm-6 mt-4 rounded-pill mb-5"> اقرأ تقرير منجزات الأكاديمية </button>
 
   </div>
- 
-  
 
-  <div class="row justify-content-center">
-    <button class="btn bootcamp-button col-sm-6 mt-4 rounded-pill mb-4">المزيد من المعسكرات والبرامج</button>
+  <div class="row g-0 justify-content-center bg-purple ">
+    <h1 class=" text-center mt-5 mb-5 text-white"> أنشطة الأكاديمية</h1>
 
+    <div class="row  g-0 justify-content-center gap-5 mb-5 gy-3">
+      <div class="col-sm-11 col-md-4 col-lg-3 ">
+        <div class="card text-center activity-card shadow-top">
+          <div class="card-body">
+            <a href="#" class="btn btn-primary rounded-circle ">
+              <svg width="55" height="60" fill="var(--main-purple)" viewBox="0 0 66 50"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_810_2963)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6.43928 33.8692H2.41602C1.0818 33.8692 0 34.9556 0 36.2897V41.1282C0 43.4816 0.932407 45.737 2.59374 47.404C4.25507 49.0684 6.50624 50.0026 8.85272 50.0026H57.1473C59.4963 50.0026 61.7475 49.0684 63.4063 47.404C65.0676 45.737 66 43.4816 66 41.1282V36.2897C66 34.9556 64.9182 33.8692 63.584 33.8692H59.5607V5.64616C59.5607 4.14946 58.9657 2.71212 57.9097 1.65411C56.8537 0.596098 55.419 0 53.9251 0H12.0749C8.96347 0 6.43928 2.5289 6.43928 5.64616V33.8692ZM61.1731 38.7077V41.1282C61.1731 42.1991 60.7507 43.2236 59.996 43.9797C59.2413 44.7358 58.2188 45.1615 57.1499 45.1615H8.85272C7.7838 45.1615 6.76124 44.7358 6.00656 43.9797C5.25187 43.2236 4.82946 42.1991 4.82946 41.1282V38.7077H61.1705H61.1731ZM54.7338 33.8692V5.64616C54.7338 5.20231 54.3758 4.83846 53.9276 4.83846H12.0724C11.6268 4.83846 11.2662 5.20231 11.2662 5.64616V33.8692H54.7313H54.7338ZM33 7.2564C33.9788 7.2564 34.8571 7.84734 35.2306 8.75052C35.604 9.6537 35.3954 10.6962 34.7077 11.3878C34.0174 12.0794 32.9794 12.2858 32.0753 11.9116C31.1738 11.5401 30.584 10.6575 30.584 9.67692C30.584 8.3428 31.6658 7.2564 33 7.2564Z"
+                    fill="#4E3797" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_810_2963">
+                    <rect width="66" height="50" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+
+            </a>
+            <h5 class="card-title mt-4">عدد المعسكرات والبرامج</h5>
+            <p class="card-subtext mt-4">معسكرات وبرامج تقنية احترافية، لاكتساب المهارات اللازمة في مجالات متخصصة وواعدة
+              في سوق العمل.
+
+            </p>
+            <button class="activity-button col-sm-12 mt-4 rounded-pill p-2 mt-4"> انتقل لصفحة التسجيل</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-11 col-md-4 col-lg-3 ">
+        <div class="card text-center activity-card shadow-top">
+          <div class="card-body">
+            <a href="#" class="btn btn-primary rounded-circle ">
+              <svg width="55" height="60" fill="var(--main-purple)" viewBox="0 0 61 51"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_810_2973)">
+                  <path
+                    d="M58.9667 0H2.03333C1.49382 0 0.977084 0.210667 0.59536 0.5856C0.214178 0.961067 0 1.46933 0 2V49C0 49.5307 0.214178 50.0389 0.59536 50.4144C0.976542 50.7899 1.49382 51 2.03333 51H58.9667C59.5062 51 60.0229 50.7893 60.4046 50.4144C60.7864 50.0395 61 49.5307 61 49V2C61 1.46933 60.7858 0.961067 60.4046 0.5856C60.0235 0.210133 59.5062 0 58.9667 0ZM56.9333 47H4.06667V15.0501H56.9333V47ZM56.9333 11.0501H4.06667V4.05013H56.9333V11.0501Z"
+                    fill="#4E3797" />
+                  <path
+                    d="M10.1363 7.46997C10.1363 8.5745 9.22592 9.46997 8.10297 9.46997C6.98003 9.46997 6.06964 8.5745 6.06964 7.46997C6.06964 6.36544 6.98003 5.46997 8.10297 5.46997C9.22592 5.46997 10.1363 6.36544 10.1363 7.46997Z"
+                    fill="#4E3797" />
+                  <path
+                    d="M16.2363 7.46997C16.2363 8.5745 15.3259 9.46997 14.203 9.46997C13.08 9.46997 12.1696 8.5745 12.1696 7.46997C12.1696 6.36544 13.08 5.46997 14.203 5.46997C15.3259 5.46997 16.2363 6.36544 16.2363 7.46997Z"
+                    fill="#4E3797" />
+                  <path
+                    d="M22.3363 7.46997C22.3363 8.5745 21.4259 9.46997 20.303 9.46997C19.18 9.46997 18.2697 8.5745 18.2697 7.46997C18.2697 6.36544 19.18 5.46997 20.303 5.46997C21.4259 5.46997 22.3363 6.36544 22.3363 7.46997Z"
+                    fill="#4E3797" />
+                  <path
+                    d="M20.6077 37.6698C20.9764 38.0932 21.5073 38.346 22.0739 38.3674C22.64 38.3892 23.1898 38.177 23.5899 37.7834C23.9901 37.3898 24.2059 36.849 24.1837 36.2916C24.162 35.7348 23.905 35.2122 23.4744 34.85L19.0618 30.5002L23.4744 26.1503C23.9229 25.6356 24.0752 24.9322 23.88 24.282C23.6848 23.6319 23.1676 23.1236 22.5071 22.9316C21.8462 22.7391 21.131 22.8895 20.6077 23.3306L14.7517 29.0906C14.3732 29.4655 14.1602 29.9722 14.1602 30.5007C14.1602 31.0292 14.3727 31.5359 14.7517 31.9108L20.6077 37.6708V37.6698Z"
+                    fill="#4E3797" />
+                  <path
+                    d="M37.525 37.6698C37.9062 38.042 38.4213 38.2516 38.9586 38.2516C39.496 38.2516 40.0111 38.0426 40.3923 37.6698L46.2483 31.9098C46.6268 31.5348 46.8398 31.0282 46.8398 30.4996C46.8398 29.9711 46.6273 29.4644 46.2483 29.0895L40.3923 23.3295C40.0236 22.906 39.4927 22.6532 38.9267 22.6319C38.3606 22.61 37.8108 22.8223 37.4101 23.2159C37.0094 23.6095 36.7941 24.1503 36.8163 24.7076C36.838 25.2644 37.095 25.7871 37.5256 26.1492L41.9382 30.4991L37.5256 34.849C37.1471 35.2239 36.934 35.7306 36.934 36.2591C36.934 36.7876 37.1465 37.2943 37.5256 37.6692L37.525 37.6698Z"
+                    fill="#4E3797" />
+                  <path
+                    d="M26.8806 40.3797C27.1024 40.4575 27.3366 40.4975 27.572 40.4997C27.99 40.4997 28.3978 40.3727 28.7394 40.1365C29.0815 39.9002 29.3412 39.5658 29.4833 39.1797L35.3393 23.1797C35.5627 22.5141 35.4152 21.7818 34.9511 21.2501C34.4864 20.7183 33.7728 20.4645 33.0701 20.5807C32.3674 20.6975 31.778 21.1674 31.5166 21.8197L25.6606 37.8197C25.4774 38.3183 25.5029 38.8682 25.7322 39.3482C25.961 39.8282 26.3742 40.1994 26.8806 40.3797Z"
+                    fill="#4E3797" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_810_2973">
+                    <rect width="61" height="51" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+
+
+            </a>
+            <h5 class="card-title mt-4">منصة سـطــــر</h5>
+            <p class="card-subtext mt-4">منصة تعليمية مجانية مُتاحة عن بعد وباللغة العربية في مختلف مجالات البرمجة
+              والتقنية.
+
+
+
+            </p>
+            <button class="activity-button col-sm-12 mt-4 rounded-pill p-2 mt-4">تعلم عن بعد</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-sm-11 col-md-4 col-lg-3 ">
+        <div class="card text-center activity-card shadow-top">
+          <div class="card-body">
+            <a href="#" class="btn btn-primary rounded-circle ">
+              <svg width="55" height="60" fill="var(--main-purple)" viewBox="0 0 76 54"
+                xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-outside-1_810_2983" maskUnits="userSpaceOnUse" x="0" y="0" width="76" height="54"
+                  fill="black">
+                  <rect fill="white" width="76" height="54" />
+                  <path
+                    d="M73.6786 40V2.3C73.6786 1.5824 73.0866 1 72.3571 1H3.64286C2.91343 1 2.32143 1.5824 2.32143 2.3V40C1.592 40 1 40.5824 1 41.3V46.5C1 50.0845 3.96423 53 7.60714 53H68.3929C72.0358 53 75 50.0845 75 46.5V41.3C75 40.5824 74.408 40 73.6786 40ZM64.3095 40C63.9 37.6184 62.3988 35.6008 60.324 34.4721C61.224 33.5388 61.7857 32.286 61.7857 30.9C61.7857 28.0324 59.4149 25.7 56.5 25.7C53.5851 25.7 51.2143 28.0324 51.2143 30.9C51.2143 32.2846 51.776 33.5374 52.676 34.4714C50.6011 35.5994 49.0986 37.6191 48.6905 39.9993H39.3214V23.1007H71.0357V40.0007L64.3095 40ZM16.8571 30.9C16.8571 29.4662 18.0426 28.3 19.5 28.3C20.9574 28.3 22.1429 29.4662 22.1429 30.9C22.1429 32.3338 20.9574 33.5 19.5 33.5C18.0426 33.5 16.8571 32.3352 16.8571 30.9ZM19.5 36.1C21.9554 36.1 24.0077 37.7626 24.5982 40H14.4018C14.9923 37.764 17.0446 36.1 19.5 36.1ZM22.1429 42.6H53.8571V43.9C53.8571 44.7632 52.9677 45.2 51.2143 45.2H24.7857C23.0323 45.2 22.1429 44.7632 22.1429 43.9V42.6ZM51.4032 40C51.9952 37.764 54.046 36.1 56.5014 36.1C58.9568 36.1 61.0077 37.7626 61.5997 40H51.4032ZM53.8571 30.9C53.8571 29.4662 55.0425 28.3 56.5 28.3C57.9574 28.3 59.1428 29.4662 59.1428 30.9C59.1428 32.3338 57.9574 33.5 56.5 33.5C55.0425 33.5 53.8571 32.3352 53.8571 30.9ZM53.8571 11.4C53.8571 9.96619 55.0425 8.8 56.5 8.8C57.9574 8.8 59.1428 9.96619 59.1428 11.4C59.1428 12.8338 57.9574 14 56.5 14C55.0425 14 53.8571 12.8352 53.8571 11.4ZM56.5 16.6C58.9554 16.6 61.0062 18.2626 61.5982 20.5H51.4017C51.9937 18.264 54.046 16.6 56.5 16.6ZM71.0357 20.5H64.3095C63.9 18.1184 62.3988 16.1008 60.324 14.9721C61.224 14.0388 61.7857 12.7853 61.7857 11.4C61.7857 8.53237 59.4149 6.2 56.5 6.2C53.5851 6.2 51.2143 8.53237 51.2143 11.4C51.2143 12.7846 51.776 14.0374 52.676 14.9714C50.6011 16.0994 49.0986 18.1184 48.6905 20.4993H39.3214V3.6H71.0357V20.5ZM36.6786 3.6V20.5H27.3095C26.9 18.1184 25.3989 16.1008 23.3226 14.9721C24.224 14.0388 24.7857 12.7853 24.7857 11.4C24.7857 8.53237 22.4149 6.2 19.5 6.2C16.5851 6.2 14.2143 8.53237 14.2143 11.4C14.2143 12.7846 14.776 14.0374 15.6774 14.9714C13.6011 16.1008 12.1 18.1184 11.6905 20.5H4.96429V3.6H36.6786ZM16.8571 11.4C16.8571 9.96619 18.0426 8.8 19.5 8.8C20.9574 8.8 22.1429 9.96619 22.1429 11.4C22.1429 12.8338 20.9574 14 19.5 14C18.0426 14 16.8571 12.8352 16.8571 11.4ZM19.5 16.6C21.9554 16.6 24.0077 18.2626 24.5982 20.5H14.4018C14.9923 18.264 17.0446 16.6 19.5 16.6ZM4.96429 23.1H36.6793V40H27.3102C26.9007 37.6184 25.3996 35.6008 23.3233 34.4721C24.2247 33.5388 24.7864 32.286 24.7864 30.9C24.7864 28.0324 22.4156 25.7 19.5007 25.7C16.5858 25.7 14.215 28.0324 14.215 30.9C14.215 32.2846 14.7767 33.5374 15.6781 34.4714C13.6018 35.6008 12.1007 37.6184 11.6912 40H4.96429V23.1ZM72.3571 46.5C72.3571 48.65 70.5783 50.4 68.3929 50.4H7.60714C5.42168 50.4 3.64286 48.65 3.64286 46.5V42.6H19.5V43.9C19.5 44.8152 19.882 47.8 24.7857 47.8H51.2143C56.118 47.8 56.5 44.8152 56.5 43.9V42.6H72.3571V46.5Z" />
+                </mask>
+                <path
+                  d="M73.6786 40V2.3C73.6786 1.5824 73.0866 1 72.3571 1H3.64286C2.91343 1 2.32143 1.5824 2.32143 2.3V40C1.592 40 1 40.5824 1 41.3V46.5C1 50.0845 3.96423 53 7.60714 53H68.3929C72.0358 53 75 50.0845 75 46.5V41.3C75 40.5824 74.408 40 73.6786 40ZM64.3095 40C63.9 37.6184 62.3988 35.6008 60.324 34.4721C61.224 33.5388 61.7857 32.286 61.7857 30.9C61.7857 28.0324 59.4149 25.7 56.5 25.7C53.5851 25.7 51.2143 28.0324 51.2143 30.9C51.2143 32.2846 51.776 33.5374 52.676 34.4714C50.6011 35.5994 49.0986 37.6191 48.6905 39.9993H39.3214V23.1007H71.0357V40.0007L64.3095 40ZM16.8571 30.9C16.8571 29.4662 18.0426 28.3 19.5 28.3C20.9574 28.3 22.1429 29.4662 22.1429 30.9C22.1429 32.3338 20.9574 33.5 19.5 33.5C18.0426 33.5 16.8571 32.3352 16.8571 30.9ZM19.5 36.1C21.9554 36.1 24.0077 37.7626 24.5982 40H14.4018C14.9923 37.764 17.0446 36.1 19.5 36.1ZM22.1429 42.6H53.8571V43.9C53.8571 44.7632 52.9677 45.2 51.2143 45.2H24.7857C23.0323 45.2 22.1429 44.7632 22.1429 43.9V42.6ZM51.4032 40C51.9952 37.764 54.046 36.1 56.5014 36.1C58.9568 36.1 61.0077 37.7626 61.5997 40H51.4032ZM53.8571 30.9C53.8571 29.4662 55.0425 28.3 56.5 28.3C57.9574 28.3 59.1428 29.4662 59.1428 30.9C59.1428 32.3338 57.9574 33.5 56.5 33.5C55.0425 33.5 53.8571 32.3352 53.8571 30.9ZM53.8571 11.4C53.8571 9.96619 55.0425 8.8 56.5 8.8C57.9574 8.8 59.1428 9.96619 59.1428 11.4C59.1428 12.8338 57.9574 14 56.5 14C55.0425 14 53.8571 12.8352 53.8571 11.4ZM56.5 16.6C58.9554 16.6 61.0062 18.2626 61.5982 20.5H51.4017C51.9937 18.264 54.046 16.6 56.5 16.6ZM71.0357 20.5H64.3095C63.9 18.1184 62.3988 16.1008 60.324 14.9721C61.224 14.0388 61.7857 12.7853 61.7857 11.4C61.7857 8.53237 59.4149 6.2 56.5 6.2C53.5851 6.2 51.2143 8.53237 51.2143 11.4C51.2143 12.7846 51.776 14.0374 52.676 14.9714C50.6011 16.0994 49.0986 18.1184 48.6905 20.4993H39.3214V3.6H71.0357V20.5ZM36.6786 3.6V20.5H27.3095C26.9 18.1184 25.3989 16.1008 23.3226 14.9721C24.224 14.0388 24.7857 12.7853 24.7857 11.4C24.7857 8.53237 22.4149 6.2 19.5 6.2C16.5851 6.2 14.2143 8.53237 14.2143 11.4C14.2143 12.7846 14.776 14.0374 15.6774 14.9714C13.6011 16.1008 12.1 18.1184 11.6905 20.5H4.96429V3.6H36.6786ZM16.8571 11.4C16.8571 9.96619 18.0426 8.8 19.5 8.8C20.9574 8.8 22.1429 9.96619 22.1429 11.4C22.1429 12.8338 20.9574 14 19.5 14C18.0426 14 16.8571 12.8352 16.8571 11.4ZM19.5 16.6C21.9554 16.6 24.0077 18.2626 24.5982 20.5H14.4018C14.9923 18.264 17.0446 16.6 19.5 16.6ZM4.96429 23.1H36.6793V40H27.3102C26.9007 37.6184 25.3996 35.6008 23.3233 34.4721C24.2247 33.5388 24.7864 32.286 24.7864 30.9C24.7864 28.0324 22.4156 25.7 19.5007 25.7C16.5858 25.7 14.215 28.0324 14.215 30.9C14.215 32.2846 14.7767 33.5374 15.6781 34.4714C13.6018 35.6008 12.1007 37.6184 11.6912 40H4.96429V23.1ZM72.3571 46.5C72.3571 48.65 70.5783 50.4 68.3929 50.4H7.60714C5.42168 50.4 3.64286 48.65 3.64286 46.5V42.6H19.5V43.9C19.5 44.8152 19.882 47.8 24.7857 47.8H51.2143C56.118 47.8 56.5 44.8152 56.5 43.9V42.6H72.3571V46.5Z"
+                  fill="#4E3797" />
+                <path
+                  d="M73.6786 40V2.3C73.6786 1.5824 73.0866 1 72.3571 1H3.64286C2.91343 1 2.32143 1.5824 2.32143 2.3V40C1.592 40 1 40.5824 1 41.3V46.5C1 50.0845 3.96423 53 7.60714 53H68.3929C72.0358 53 75 50.0845 75 46.5V41.3C75 40.5824 74.408 40 73.6786 40ZM64.3095 40C63.9 37.6184 62.3988 35.6008 60.324 34.4721C61.224 33.5388 61.7857 32.286 61.7857 30.9C61.7857 28.0324 59.4149 25.7 56.5 25.7C53.5851 25.7 51.2143 28.0324 51.2143 30.9C51.2143 32.2846 51.776 33.5374 52.676 34.4714C50.6011 35.5994 49.0986 37.6191 48.6905 39.9993H39.3214V23.1007H71.0357V40.0007L64.3095 40ZM16.8571 30.9C16.8571 29.4662 18.0426 28.3 19.5 28.3C20.9574 28.3 22.1429 29.4662 22.1429 30.9C22.1429 32.3338 20.9574 33.5 19.5 33.5C18.0426 33.5 16.8571 32.3352 16.8571 30.9ZM19.5 36.1C21.9554 36.1 24.0077 37.7626 24.5982 40H14.4018C14.9923 37.764 17.0446 36.1 19.5 36.1ZM22.1429 42.6H53.8571V43.9C53.8571 44.7632 52.9677 45.2 51.2143 45.2H24.7857C23.0323 45.2 22.1429 44.7632 22.1429 43.9V42.6ZM51.4032 40C51.9952 37.764 54.046 36.1 56.5014 36.1C58.9568 36.1 61.0077 37.7626 61.5997 40H51.4032ZM53.8571 30.9C53.8571 29.4662 55.0425 28.3 56.5 28.3C57.9574 28.3 59.1428 29.4662 59.1428 30.9C59.1428 32.3338 57.9574 33.5 56.5 33.5C55.0425 33.5 53.8571 32.3352 53.8571 30.9ZM53.8571 11.4C53.8571 9.96619 55.0425 8.8 56.5 8.8C57.9574 8.8 59.1428 9.96619 59.1428 11.4C59.1428 12.8338 57.9574 14 56.5 14C55.0425 14 53.8571 12.8352 53.8571 11.4ZM56.5 16.6C58.9554 16.6 61.0062 18.2626 61.5982 20.5H51.4017C51.9937 18.264 54.046 16.6 56.5 16.6ZM71.0357 20.5H64.3095C63.9 18.1184 62.3988 16.1008 60.324 14.9721C61.224 14.0388 61.7857 12.7853 61.7857 11.4C61.7857 8.53237 59.4149 6.2 56.5 6.2C53.5851 6.2 51.2143 8.53237 51.2143 11.4C51.2143 12.7846 51.776 14.0374 52.676 14.9714C50.6011 16.0994 49.0986 18.1184 48.6905 20.4993H39.3214V3.6H71.0357V20.5ZM36.6786 3.6V20.5H27.3095C26.9 18.1184 25.3989 16.1008 23.3226 14.9721C24.224 14.0388 24.7857 12.7853 24.7857 11.4C24.7857 8.53237 22.4149 6.2 19.5 6.2C16.5851 6.2 14.2143 8.53237 14.2143 11.4C14.2143 12.7846 14.776 14.0374 15.6774 14.9714C13.6011 16.1008 12.1 18.1184 11.6905 20.5H4.96429V3.6H36.6786ZM16.8571 11.4C16.8571 9.96619 18.0426 8.8 19.5 8.8C20.9574 8.8 22.1429 9.96619 22.1429 11.4C22.1429 12.8338 20.9574 14 19.5 14C18.0426 14 16.8571 12.8352 16.8571 11.4ZM19.5 16.6C21.9554 16.6 24.0077 18.2626 24.5982 20.5H14.4018C14.9923 18.264 17.0446 16.6 19.5 16.6ZM4.96429 23.1H36.6793V40H27.3102C26.9007 37.6184 25.3996 35.6008 23.3233 34.4721C24.2247 33.5388 24.7864 32.286 24.7864 30.9C24.7864 28.0324 22.4156 25.7 19.5007 25.7C16.5858 25.7 14.215 28.0324 14.215 30.9C14.215 32.2846 14.7767 33.5374 15.6781 34.4714C13.6018 35.6008 12.1007 37.6184 11.6912 40H4.96429V23.1ZM72.3571 46.5C72.3571 48.65 70.5783 50.4 68.3929 50.4H7.60714C5.42168 50.4 3.64286 48.65 3.64286 46.5V42.6H19.5V43.9C19.5 44.8152 19.882 47.8 24.7857 47.8H51.2143C56.118 47.8 56.5 44.8152 56.5 43.9V42.6H72.3571V46.5Z"
+                  stroke="#4E3797" stroke-width="0.4" mask="url(#path-1-outside-1_810_2983)" />
+              </svg>
+
+
+            </a>
+            <h5 class="card-title mt-4">ويبينـــار طويــــق
+            </h5>
+            <p class="card-subtext mt-4">لقاء إثرائي من تقديم خبراء ومختصين تقنيين، لمناقشة مواضيع في مجالات التقنية
+              والبرمجة والأمن السيبراني.
+
+
+
+            </p>
+            <button class="activity-button col-sm-12 mt-4 rounded-pill p-2 mt-4">تعلــم عن بعــــد</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-11 col-md-4 col-lg-3 ">
+        <div class="card text-center activity-card shadow-top">
+          <div class="card-body">
+            <a href="#" class="btn btn-primary rounded-circle ">
+              <svg width="55" height="60" fill="var(--main-purple)" viewBox="0 0 45 53"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M43.125 41.6429H1.875C0.84 41.6429 0 40.7949 0 39.75V32.1786C0 31.1337 0.84 30.2857 1.875 30.2857H43.125C44.16 30.2857 45 31.1337 45 32.1786V39.75C45 40.7949 44.16 41.6429 43.125 41.6429ZM3.75 37.8571H41.25V34.0714H3.75V37.8571Z"
+                  fill="#4E3797" />
+                <path
+                  d="M22.5 15.1429C18.3635 15.1429 15 11.7473 15 7.57143C15 3.39553 18.3635 0 22.5 0C26.6365 0 30 3.39553 30 7.57143C30 11.7473 26.6365 15.1429 22.5 15.1429ZM22.5 3.78571C20.434 3.78571 18.75 5.48575 18.75 7.57143C18.75 9.6571 20.434 11.3571 22.5 11.3571C24.566 11.3571 26.25 9.6571 26.25 7.57143C26.25 5.48575 24.57 3.78571 22.5 3.78571Z"
+                  fill="#4E3797" />
+                <path
+                  d="M35.625 34.0714C34.59 34.0714 33.75 33.2234 33.75 32.1786V27.2799C31.7365 25.3189 29.216 23.907 26.516 23.2291L23.8275 25.9473C23.0965 26.6852 21.9075 26.6852 21.1765 25.9473L18.484 23.2291C15.7575 23.907 13.2825 25.2926 11.25 27.2763V32.1786C11.25 33.2234 10.41 34.0714 9.375 34.0714C8.34 34.0714 7.5 33.2234 7.5 32.1786V26.5C7.5 26.0154 7.684 25.55 8.0135 25.1977C10.9125 22.105 14.625 20.0643 18.75 19.2996C19.3465 19.186 19.98 19.3788 20.415 19.822L22.5 21.9304L24.5885 19.822C25.0235 19.3829 25.6425 19.1895 26.2535 19.2996C30.3185 20.0532 34.132 22.1505 36.986 25.1977C37.316 25.5495 37.5 26.0154 37.5 26.5V32.1786C37.5 33.2234 36.66 34.0714 35.625 34.0714Z"
+                  fill="#4E3797" />
+                <path
+                  d="M30 53H15C14.081 53 13.301 52.3302 13.151 51.4176L11.276 40.0604C11.107 39.0307 11.7975 38.054 12.817 37.8839C13.8445 37.6981 14.8045 38.4104 14.973 39.4396L16.5855 49.2143H28.4095L30.0255 39.4396C30.198 38.4058 31.1765 37.7098 32.1815 37.8839C33.2015 38.0545 33.895 39.0312 33.7225 40.0604L31.8475 51.4176C31.6975 52.3297 30.9135 53 29.9985 53H30Z"
+                  fill="#4E3797" />
+              </svg>
+            </a>
+            <h5 class="card-title mt-4">طويق Talk</h5>
+            <p class="card-subtext mt-4">ندوة أسبوعية من تقديم خبراء ومختصين، عن أبرز المواضيع المتداولة في مختلف
+              المجالات التقنية.
+
+
+
+            </p>
+            <button class="activity-button col-sm-12 mt-4 rounded-pill p-2 mt-4">تعـــرف أكـــــثر</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
   </div>
-</div>
 
-<div class="row g-0 justify-content-center ">
-  <h1 class="numbers-title text-center mt-5 mb-5">أرقام الأكاديمية</h1>
 
-  <div class="row justify-content-center gap-5 mb-5 gy-3"> 
-    <div class="col-sm-11 col-md-4 col-lg-3 ">
-      <div class="card text-center numbers-card shadow-top" >
-        <div class="card-body">
-          <a href="#" class="btn btn-primary rounded-circle ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="white" class="bi bi-rocket" viewBox="0 0 16 16">
-              <path d="M8 8c.828 0 1.5-.895 1.5-2S8.828 4 8 4s-1.5.895-1.5 2S7.172 8 8 8"/>
-              <path d="M11.953 8.81c-.195-3.388-.968-5.507-1.777-6.819C9.707 1.233 9.23.751 8.857.454a3.5 3.5 0 0 0-.463-.315A2 2 0 0 0 8.25.064.55.55 0 0 0 8 0a.55.55 0 0 0-.266.073 2 2 0 0 0-.142.08 4 4 0 0 0-.459.33c-.37.308-.844.803-1.31 1.57-.805 1.322-1.577 3.433-1.774 6.756l-1.497 1.826-.004.005A2.5 2.5 0 0 0 2 12.202V15.5a.5.5 0 0 0 .9.3l1.125-1.5c.166-.222.42-.4.752-.57.214-.108.414-.192.625-.281l.198-.084c.7.428 1.55.635 2.4.635s1.7-.207 2.4-.635q.1.044.196.083c.213.09.413.174.627.282.332.17.586.348.752.57l1.125 1.5a.5.5 0 0 0 .9-.3v-3.298a2.5 2.5 0 0 0-.548-1.562zM12 10.445v.055c0 .866-.284 1.585-.75 2.14.146.064.292.13.425.199.39.197.8.46 1.1.86L13 14v-1.798a1.5 1.5 0 0 0-.327-.935zM4.75 12.64C4.284 12.085 4 11.366 4 10.5v-.054l-.673.82a1.5 1.5 0 0 0-.327.936V14l.225-.3c.3-.4.71-.664 1.1-.861.133-.068.279-.135.425-.199M8.009 1.073q.096.06.226.163c.284.226.683.621 1.09 1.28C10.137 3.836 11 6.237 11 10.5c0 .858-.374 1.48-.943 1.893C9.517 12.786 8.781 13 8 13s-1.517-.214-2.057-.607C5.373 11.979 5 11.358 5 10.5c0-4.182.86-6.586 1.677-7.928.409-.67.81-1.082 1.096-1.32q.136-.113.236-.18Z"/>
-              <path d="M9.479 14.361c-.48.093-.98.139-1.479.139s-.999-.046-1.479-.139L7.6 15.8a.5.5 0 0 0 .8 0z"/>
-            </svg>
-          </a>
-          <h5 class="card-title">عدد المعسكرات والبرامج</h5>
-          <p class="card-text">+700</p>
-          <p class="card-subtext">معسكر وبرنامج</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-sm-11 col-md-4 col-lg-3 ">
-      <div class="card text-center numbers-card shadow-top" >
-        <div class="card-body">
-          <a href="#" class="btn btn-primary rounded-circle ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="white" class="bi bi-rocket" viewBox="0 0 16 16">
-              <path d="M8 8c.828 0 1.5-.895 1.5-2S8.828 4 8 4s-1.5.895-1.5 2S7.172 8 8 8"/>
-              <path d="M11.953 8.81c-.195-3.388-.968-5.507-1.777-6.819C9.707 1.233 9.23.751 8.857.454a3.5 3.5 0 0 0-.463-.315A2 2 0 0 0 8.25.064.55.55 0 0 0 8 0a.55.55 0 0 0-.266.073 2 2 0 0 0-.142.08 4 4 0 0 0-.459.33c-.37.308-.844.803-1.31 1.57-.805 1.322-1.577 3.433-1.774 6.756l-1.497 1.826-.004.005A2.5 2.5 0 0 0 2 12.202V15.5a.5.5 0 0 0 .9.3l1.125-1.5c.166-.222.42-.4.752-.57.214-.108.414-.192.625-.281l.198-.084c.7.428 1.55.635 2.4.635s1.7-.207 2.4-.635q.1.044.196.083c.213.09.413.174.627.282.332.17.586.348.752.57l1.125 1.5a.5.5 0 0 0 .9-.3v-3.298a2.5 2.5 0 0 0-.548-1.562zM12 10.445v.055c0 .866-.284 1.585-.75 2.14.146.064.292.13.425.199.39.197.8.46 1.1.86L13 14v-1.798a1.5 1.5 0 0 0-.327-.935zM4.75 12.64C4.284 12.085 4 11.366 4 10.5v-.054l-.673.82a1.5 1.5 0 0 0-.327.936V14l.225-.3c.3-.4.71-.664 1.1-.861.133-.068.279-.135.425-.199M8.009 1.073q.096.06.226.163c.284.226.683.621 1.09 1.28C10.137 3.836 11 6.237 11 10.5c0 .858-.374 1.48-.943 1.893C9.517 12.786 8.781 13 8 13s-1.517-.214-2.057-.607C5.373 11.979 5 11.358 5 10.5c0-4.182.86-6.586 1.677-7.928.409-.67.81-1.082 1.096-1.32q.136-.113.236-.18Z"/>
-              <path d="M9.479 14.361c-.48.093-.98.139-1.479.139s-.999-.046-1.479-.139L7.6 15.8a.5.5 0 0 0 .8 0z"/>
-            </svg>
-          </a>
-          <h5 class="card-title">عدد المعسكرات والبرامج</h5>
-          <p class="card-text">+700</p>
-          <p class="card-subtext">معسكر وبرنامج</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-sm-11 col-md-4 col-lg-3 ">
-      <div class="card text-center numbers-card shadow-top" >
-        <div class="card-body">
-          <a href="#" class="btn btn-primary rounded-circle ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="white" class="bi bi-rocket" viewBox="0 0 16 16">
-              <path d="M8 8c.828 0 1.5-.895 1.5-2S8.828 4 8 4s-1.5.895-1.5 2S7.172 8 8 8"/>
-              <path d="M11.953 8.81c-.195-3.388-.968-5.507-1.777-6.819C9.707 1.233 9.23.751 8.857.454a3.5 3.5 0 0 0-.463-.315A2 2 0 0 0 8.25.064.55.55 0 0 0 8 0a.55.55 0 0 0-.266.073 2 2 0 0 0-.142.08 4 4 0 0 0-.459.33c-.37.308-.844.803-1.31 1.57-.805 1.322-1.577 3.433-1.774 6.756l-1.497 1.826-.004.005A2.5 2.5 0 0 0 2 12.202V15.5a.5.5 0 0 0 .9.3l1.125-1.5c.166-.222.42-.4.752-.57.214-.108.414-.192.625-.281l.198-.084c.7.428 1.55.635 2.4.635s1.7-.207 2.4-.635q.1.044.196.083c.213.09.413.174.627.282.332.17.586.348.752.57l1.125 1.5a.5.5 0 0 0 .9-.3v-3.298a2.5 2.5 0 0 0-.548-1.562zM12 10.445v.055c0 .866-.284 1.585-.75 2.14.146.064.292.13.425.199.39.197.8.46 1.1.86L13 14v-1.798a1.5 1.5 0 0 0-.327-.935zM4.75 12.64C4.284 12.085 4 11.366 4 10.5v-.054l-.673.82a1.5 1.5 0 0 0-.327.936V14l.225-.3c.3-.4.71-.664 1.1-.861.133-.068.279-.135.425-.199M8.009 1.073q.096.06.226.163c.284.226.683.621 1.09 1.28C10.137 3.836 11 6.237 11 10.5c0 .858-.374 1.48-.943 1.893C9.517 12.786 8.781 13 8 13s-1.517-.214-2.057-.607C5.373 11.979 5 11.358 5 10.5c0-4.182.86-6.586 1.677-7.928.409-.67.81-1.082 1.096-1.32q.136-.113.236-.18Z"/>
-              <path d="M9.479 14.361c-.48.093-.98.139-1.479.139s-.999-.046-1.479-.139L7.6 15.8a.5.5 0 0 0 .8 0z"/>
-            </svg>
-          </a>
-          <h5 class="card-title">عدد المسجلين في البرامج</h5>
-          <p class="card-text">+1000000</p>
-          <p class="card-subtext">معسكر وبرنامج</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-sm-11 col-md-4 col-lg-3 ">
-      <div class="card text-center numbers-card shadow-top" >
-        <div class="card-body">
-          <a href="#" class="btn btn-primary rounded-circle ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="white" class="bi bi-rocket" viewBox="0 0 16 16">
-              <path d="M8 8c.828 0 1.5-.895 1.5-2S8.828 4 8 4s-1.5.895-1.5 2S7.172 8 8 8"/>
-              <path d="M11.953 8.81c-.195-3.388-.968-5.507-1.777-6.819C9.707 1.233 9.23.751 8.857.454a3.5 3.5 0 0 0-.463-.315A2 2 0 0 0 8.25.064.55.55 0 0 0 8 0a.55.55 0 0 0-.266.073 2 2 0 0 0-.142.08 4 4 0 0 0-.459.33c-.37.308-.844.803-1.31 1.57-.805 1.322-1.577 3.433-1.774 6.756l-1.497 1.826-.004.005A2.5 2.5 0 0 0 2 12.202V15.5a.5.5 0 0 0 .9.3l1.125-1.5c.166-.222.42-.4.752-.57.214-.108.414-.192.625-.281l.198-.084c.7.428 1.55.635 2.4.635s1.7-.207 2.4-.635q.1.044.196.083c.213.09.413.174.627.282.332.17.586.348.752.57l1.125 1.5a.5.5 0 0 0 .9-.3v-3.298a2.5 2.5 0 0 0-.548-1.562zM12 10.445v.055c0 .866-.284 1.585-.75 2.14.146.064.292.13.425.199.39.197.8.46 1.1.86L13 14v-1.798a1.5 1.5 0 0 0-.327-.935zM4.75 12.64C4.284 12.085 4 11.366 4 10.5v-.054l-.673.82a1.5 1.5 0 0 0-.327.936V14l.225-.3c.3-.4.71-.664 1.1-.861.133-.068.279-.135.425-.199M8.009 1.073q.096.06.226.163c.284.226.683.621 1.09 1.28C10.137 3.836 11 6.237 11 10.5c0 .858-.374 1.48-.943 1.893C9.517 12.786 8.781 13 8 13s-1.517-.214-2.057-.607C5.373 11.979 5 11.358 5 10.5c0-4.182.86-6.586 1.677-7.928.409-.67.81-1.082 1.096-1.32q.136-.113.236-.18Z"/>
-              <path d="M9.479 14.361c-.48.093-.98.139-1.479.139s-.999-.046-1.479-.139L7.6 15.8a.5.5 0 0 0 .8 0z"/>
-            </svg>
-          </a>
-          <h5 class="card-title">عدد المعسكرات والبرامج</h5>
-          <p class="card-text">+700</p>
-          <p class="card-subtext">معسكر وبرنامج</p>
-        </div>
-      </div>
-    </div>
 
-    
-  
-  </div>
-</div>
-   
-    
 
-    
-    
-    <!-- html ends here -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- html ends here -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
