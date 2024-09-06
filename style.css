@@ -3,9 +3,13 @@ html {
 }
 :root {
   --main-purple: #4e3797;
-  --bootcamp-accent: rgba(191, 13, 222, 0.499);
+  --bootcamp-accent: rgba(150, 7, 175, 0.626);
   --talk-accent: rgba(23, 213, 89, 0.706);
   --course-accent: rgb(14, 171, 189);
+}
+
+body{
+    height: 100vh;
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -36,24 +40,33 @@ html {
     margin-left: 1.5rem;
   }
 
+  
+  .section-main-title {
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  
+  .text-main-purple{
+    color: var(--main-purple);
+  }
+
+
   .bg-grey{
     background-color: #f1f4f7;
   }
 
-  .bootcamp-button {
+  .purple-outline-button {
     background-color: none;
     color: var(--main-purple);
     border: 2px solid var(--main-purple);
     transition: 0.4s;
+  
   }
 
-  .bootcamp-button:hover {
+  .purple-outline-button:hover {
     background-color: var(--main-purple);
     color: white;
-  }
-
-  .bootcamp-title {
-    color: var(--main-purple);
   }
 
   .card-bootcamp svg {
@@ -72,6 +85,7 @@ html {
     background-color: white;
     color: var(--bootcamp-accent);
     border: 2px solid var(--bootcamp-accent) !important;
+    transition: 0.4s;
   }
 
   .card-bootcamp .card-bootcamp-btn:hover {
@@ -211,7 +225,21 @@ html {
    
          
   }
+  .bg-teal{
+    background-color: #5bbec2;
+  }
 
+  .sub-button{
+    border: 2px solid var(--main-purple);
+  }
+
+  .sub-button:hover{
+    background-color: #5d0069 !important;
+  }
+
+  .contact-form-input:active{
+    border: 2px solid var(--main-purple);
+  }
 
 }
 
@@ -231,6 +259,8 @@ html {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
   }
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -278,6 +308,7 @@ html {
   height: 100vh;
 }
 
-/* .logo{
+.logo{
     filter: invert(43%) sepia(231%) saturate(0%) hue-rotate(256deg) brightness(118%) contrast(330%)
-} */
+}
+
