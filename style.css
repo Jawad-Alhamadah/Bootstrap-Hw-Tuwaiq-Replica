@@ -10,6 +10,7 @@ html {
 
 body{
     height: 100vh;
+    overflow-x: hidden;
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 200px) {
@@ -405,4 +406,12 @@ color: #5bbec2 !important;
 }
 #article6:target{
     display: block !important;
+}
+
+.scroll >a:hover {
+color: rgb(161, 10, 188) !important;
+}
+
+.text-teal{
+    color: #91d8db !important;
 }

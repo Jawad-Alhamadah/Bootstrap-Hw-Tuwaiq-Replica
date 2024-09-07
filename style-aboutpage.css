@@ -1,6 +1,6 @@
 
   /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 500px) {
+  @media (min-width: 200px) {
     .about-us-title{
         font-size: 4em;
         color: var(--main-purple);
