@@ -331,3 +331,8 @@ body{
     filter: invert(43%) sepia(231%) saturate(0%) hue-rotate(256deg) brightness(118%) contrast(330%)
 }
 
+.tuwaiq-nav a:hover{
+color: #5bbec2 !important;
+
+
+}
