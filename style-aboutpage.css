@@ -10,16 +10,38 @@
     font-size: 1.7em;
    }
 
+    .offer-section-images{
+    width: 20%;
+  }
+
+  .about-size{
+    width:16em;
+  }
   }
   
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
    
    
+     .offer-section-images{
+    width: 20%;
+  }
+  .about-size{
+    width:16em;
+  }
+
   }
   
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) {
+
+     .offer-section-images{
+    width: 20%;
+  }
+
+    .about-size{
+        width:16em;
+    }
 
   }
   
@@ -56,6 +78,10 @@
     
   }
 
+
+  .offer-section-images{
+    width: 20%;
+  }
 
 
 
