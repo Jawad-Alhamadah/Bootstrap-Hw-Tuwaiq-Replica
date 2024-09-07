@@ -12,7 +12,7 @@ body{
     height: 100vh;
 }
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media (min-width: 200px) {
   .main-title {
     font-weight: 700;
     font-size: 3.75em;
@@ -65,7 +65,7 @@ body{
   }
 
   .purple-outline-button:hover {
-    background-color: var(--main-purple);
+    background-color: var(--main-purple) !important;
     color: white;
   }
 
@@ -333,6 +333,76 @@ body{
 
 .tuwaiq-nav a:hover{
 color: #5bbec2 !important;
+    transition: 0.3s;
+
+}
 
 
+.current-link{
+    background-color: rgba(225, 225, 225, 0.848);
+   
+}
+
+.current-link *{
+    color: #760186 !important;
+}
+
+.scroll {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+
+
+.no-border{
+    border: 0px solid black;
+}
+
+
+.border-bot{
+    border-bottom: 1px solid black;
+}
+
+.no-radius{
+    border-radius: 0px !important;
+}
+
+.foot-note{
+    font-size: 1em;
+    color:rgba(128, 128, 128, 0.787);
+
+    font-weight: 400;
+}
+
+
+.activate-news-card{
+    text-decoration: none;
+
+}
+
+.article-hidden{
+    display: none;
+}
+#article1:target{
+    display: block !important;
+}
+
+#article1:target [href="#article1"]{
+    background-color: #5d0069;
+}
+
+#article2:target{
+    display: block !important;
+}
+#article3:target{
+    display: block !important;
+}
+#article4:target{
+    display: block !important;
+}
+#article5:target{
+    display: block !important;
+}
+#article6:target{
+    display: block !important;
 }
