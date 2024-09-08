@@ -252,7 +252,14 @@ body{
     width: 16rem;
 
   }
+  .navbar-brand {
+    width: 29vw;
+  }
 
+  .tuwaiq-footer-logo{
+    padding: 1.5em;
+  
+  }
  
 }
 
@@ -278,6 +285,18 @@ body{
     transition: 0.2s;
   }
 
+  
+  .nav-link{
+    font-size: 0.9em ;
+  }
+
+  .navbar-nav li{
+   padding-right: 0.4em;
+  }
+
+  .navbar-brand {
+    width: 22vw;
+  }
 }
 
 .video-container {
